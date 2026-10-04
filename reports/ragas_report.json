@@ -1,0 +1,91 @@
+{
+  "aggregate": {
+    "faithfulness": 0.85,
+    "answer_relevancy": 0.8638875459389956,
+    "context_precision": 0.9499999999362497,
+    "context_recall": 0.9333333333333332
+  },
+  "num_questions": 20,
+  "failures": [
+    {
+      "question": "Một nhân viên Senior có 9 năm thâm niên được nghỉ bao nhiêu ngày phép năm và lương trong khoảng nào?",
+      "worst_metric": "faithfulness",
+      "score": 0.25,
+      "average_score": 0.6520807854878865,
+      "diagnosis": "Answer contains claims unsupported by the retrieved context",
+      "suggested_fix": "Tighten the grounded-answer prompt and improve context filtering"
+    },
+    {
+      "question": "Nhân viên tạm ứng 15 triệu, sau 20 ngày mới thanh toán. Bị phạt bao nhiêu?",
+      "worst_metric": "faithfulness",
+      "score": 0.25,
+      "average_score": 0.6880048775196979,
+      "diagnosis": "Answer contains claims unsupported by the retrieved context",
+      "suggested_fix": "Tighten the grounded-answer prompt and improve context filtering"
+    },
+    {
+      "question": "Nếu cần mua một chiếc laptop 30 triệu cho nhân viên mới, ai phê duyệt và cần gì từ phòng CNTT?",
+      "worst_metric": "faithfulness",
+      "score": 0.5,
+      "average_score": 0.7743568566472918,
+      "diagnosis": "Answer contains claims unsupported by the retrieved context",
+      "suggested_fix": "Tighten the grounded-answer prompt and improve context filtering"
+    },
+    {
+      "question": "Nghỉ phép không lương 20 ngày cần ai phê duyệt?",
+      "worst_metric": "faithfulness",
+      "score": 0.5,
+      "average_score": 0.829241927185189,
+      "diagnosis": "Answer contains claims unsupported by the retrieved context",
+      "suggested_fix": "Tighten the grounded-answer prompt and improve context filtering"
+    },
+    {
+      "question": "Bao lâu phải đổi mật khẩu một lần?",
+      "worst_metric": "context_precision",
+      "score": 0.49999999995,
+      "average_score": 0.848132843453045,
+      "diagnosis": "Retrieved context contains too many irrelevant chunks",
+      "suggested_fix": "Improve reranking or add metadata filters"
+    },
+    {
+      "question": "Có cần kích hoạt xác thực đa yếu tố (MFA) không?",
+      "worst_metric": "context_recall",
+      "score": 0.5,
+      "average_score": 0.8486805790918796,
+      "diagnosis": "Relevant information was not retrieved",
+      "suggested_fix": "Improve chunking, query expansion, or add BM25 candidates"
+    },
+    {
+      "question": "Nhân viên được tài trợ khóa học 25 triệu, nghỉ việc sau 8 tháng hoàn thành khóa học. Phải hoàn trả bao nhiêu?",
+      "worst_metric": "faithfulness",
+      "score": 0.5,
+      "average_score": 0.8508619544681194,
+      "diagnosis": "Answer contains claims unsupported by the retrieved context",
+      "suggested_fix": "Tighten the grounded-answer prompt and improve context filtering"
+    },
+    {
+      "question": "Khi phát hiện malware trên máy, nhân viên có nên tự xử lý không?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.8239725839807533,
+      "average_score": 0.914326479318105,
+      "diagnosis": "Answer does not directly address the question",
+      "suggested_fix": "Improve the answer prompt and require a concise direct response"
+    },
+    {
+      "question": "Bảo hiểm sức khỏe PVI có hạn mức bao nhiêu cho nhân viên?",
+      "worst_metric": "context_precision",
+      "score": 0.8333333332916666,
+      "average_score": 0.9237006222542854,
+      "diagnosis": "Retrieved context contains too many irrelevant chunks",
+      "suggested_fix": "Improve reranking or add metadata filters"
+    },
+    {
+      "question": "Muốn mua thiết bị trị giá 55 triệu cần ai phê duyệt?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.7932935937833335,
+      "average_score": 0.9483233984208334,
+      "diagnosis": "Answer does not directly address the question",
+      "suggested_fix": "Improve the answer prompt and require a concise direct response"
+    }
+  ]
+}
